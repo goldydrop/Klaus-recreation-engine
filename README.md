@@ -11,7 +11,7 @@ A Blender animation tool/add-on that uses Thin Plate Spline (TPS) interpolation 
 
 • The Current Roadblock: I ran directly into Blender's new Grease Pencil v3 architectural overhaul. The script threw an `AttributeError: 'GreasePencil' object has no attribute 'layers'`. This means the old way of accessing drawing frames and strokes has changed in Blender 5.0.
 
-3. Where We Are Headed (Next Steps)
+##  Where Its Headed (Next Steps) 
 1. Update Grease Pencil API Syntax: Modify the layer, frame, and stroke fetching logic to conform with the new Blender 5.0 Grease Pencil v3 data structure (navigating the new geometry/drawing blocks instead of the legacy `.layers`).
 
 2. 2D/3D Coordinate Projection: Perfect the scaling and transformation variables so that the 3D viewport stroke coordinates map precisely to the 2D pixel space used by the Thin Plate Spline transformer.
