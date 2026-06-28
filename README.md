@@ -1,10 +1,10 @@
 Klaus Engine - Project Roadmap & Status
 
 Project: Klaus Engine (True TPS Shadow Warper)
-1. What We Are Making
+1. What I Am Making:
 A Blender animation tool/add-on that uses Thin Plate Spline (TPS) interpolation via OpenCV to automatically warp and deform a 2D shadow texture based on the movement of hand-drawn Grease Pencil keyframes.
 
-2. Where We Are At (Current Status)
+2. Where I Am At (Current Status)
 • Dependency Injection: 100% Successful. We successfully bypassed Blender 5.0's isolated environment using a priority path override (`sys.path.insert(0)`), allowing the script to load external `cv2` (OpenCV) and `numpy` math libraries flawlessly.
 
 • Point Resampling: 100% Successful. Built a bulletproof stroke resampler (`resample_stroke` and `get_vec`) capable of processing both raw math vectors and stroke point objects uniformly.
