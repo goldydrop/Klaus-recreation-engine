@@ -9,7 +9,7 @@ A Blender animation tool/add-on that uses Thin Plate Spline (TPS) interpolation 
 
 • Point Resampling: 100% Successful. Built a bulletproof stroke resampler (`resample_stroke` and `get_vec`) capable of processing both raw math vectors and stroke point objects uniformly.
 
-• The Current Roadblock: We ran directly into Blender's new Grease Pencil v3 architectural overhaul. The script threw an `AttributeError: 'GreasePencil' object has no attribute 'layers'`. This means the old way of accessing drawing frames and strokes has changed in Blender 5.0.
+• The Current Roadblock: I ran directly into Blender's new Grease Pencil v3 architectural overhaul. The script threw an `AttributeError: 'GreasePencil' object has no attribute 'layers'`. This means the old way of accessing drawing frames and strokes has changed in Blender 5.0.
 
 3. Where We Are Headed (Next Steps)
 1. Update Grease Pencil API Syntax: Modify the layer, frame, and stroke fetching logic to conform with the new Blender 5.0 Grease Pencil v3 data structure (navigating the new geometry/drawing blocks instead of the legacy `.layers`).
